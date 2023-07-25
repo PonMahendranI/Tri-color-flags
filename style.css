@@ -1,0 +1,160 @@
+h1
+{
+    display:inline;
+    visibility: hidden;
+}
+div
+{
+    height:200px;
+    width:900px;
+    padding: 0; 
+}
+
+.top
+{
+    background-color: orange;
+    position: relative;
+    top:0px;
+}
+.bottom
+{
+    background-color: green;
+    position: relative;
+}
+.middle
+{
+    position: relative;
+}
+
+.wheel
+{
+    border: 2px solid darkblue; 
+    position: absolute;
+    left:360px;
+    top:10px;
+    height:180px;
+    width: 180px;
+    border-radius: 50%;
+}
+.line
+{
+    height:100%;
+    width:2px;
+    background-color: darkblue;
+    display: inline-block;
+    position: absolute;
+    left:50%;
+}
+.line:nth-child(1){
+    transform: rotate(15deg)
+}
+
+.line:nth-child(2){
+    transform:rotate(30deg)
+}
+.line:nth-child(3){
+    transform:rotate(45deg)
+}
+.line:nth-child(4){
+    transform:rotate(60deg)
+}
+.line:nth-child(5){
+    transform:rotate(75deg)
+}
+.line:nth-child(6){
+    transform:rotate(90deg)
+}
+.line:nth-child(7){
+    transform:rotate(105deg)
+}
+.line:nth-child(8){
+    transform:rotate(120deg)
+}
+.line:nth-child(9){
+    transform:rotate(135deg)
+}
+.line:nth-child(10){
+    transform:rotate(150deg)
+}
+.line:nth-child(11){
+    transform:rotate(165deg)
+}
+.line:nth-child(12){
+    transform:rotate(180deg)
+}
+/*India */
+@media(min-width:1401px){
+
+    h1:nth-child(1){
+        visibility:visible;
+        position: relative;
+        left:350px;
+        font-size: 2.3rem;
+    }
+   
+}
+/*Armenia */
+@media(min-width:481px) and (max-width:1100px)
+{
+    .top{
+        background-color: red;
+    }
+    .middle{
+        background-color: darkblue;
+    }
+    .bottom{
+        background-color: yellow;
+    }
+    .wheel{
+        visibility: hidden;
+    }
+    .line{
+        visibility: hidden;
+    }
+    div{
+        width:500px;
+        height:100px
+    }
+    h1:nth-child(2){
+        visibility: visible;
+        position: relative;
+        left:-50px;
+        font-size:1.8rem;
+    }
+    
+}
+
+/* Bulgaria */
+@media(min-width:1101px) and (max-width:1400px){
+    body{
+        background-color: aqua;
+    }
+    div{
+        width:600px;
+        height:150px;
+    }
+    .top{
+        background-color: white;
+    }
+    .middle{
+        background-color:green;
+    }
+    .wheel{
+        visibility: hidden;
+    }
+    .line{
+        visibility: hidden;
+    }
+    .bottom
+    {
+        background-color: red;
+    }
+    h1:nth-child(3){
+        visibility: visible;
+        position: relative;
+        left:-250px;
+    }
+}
+
+
+
